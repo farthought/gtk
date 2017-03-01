@@ -1,0 +1,269 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+CalendarData	canlendar.c	/^} CalendarData;$/;"	t	typeref:struct:_CalendarData	file:
+DEF_PAD	canlendar.c	20;"	d	file:
+DEF_PAD_SMALL	canlendar.c	21;"	d	file:
+EVENT_METHOD	ruler.c	3;"	d	file:
+LOCK_CAPS	capslock.c	/^	LOCK_CAPS = 1 << 0,$/;"	e	enum:__anon1	file:
+LOCK_NONE	capslock.c	/^	LOCK_NONE = 0,$/;"	e	enum:__anon1	file:
+NAME	capslock.c	4;"	d	file:
+NAME	login.c	3;"	d	file:
+PWD	capslock.c	5;"	d	file:
+PWD	login.c	4;"	d	file:
+ProgressData	progressbar.c	/^}ProgressData;$/;"	t	typeref:struct:_ProgressData	file:
+TM_YEAR_BASE	canlendar.c	23;"	d	file:
+XSIZE	ruler.c	5;"	d	file:
+YSIZE	ruler.c	6;"	d	file:
+_CalendarData	canlendar.c	/^typedef struct _CalendarData {$/;"	s	file:
+_CalendarData::flag_checkboxes	canlendar.c	/^  GtkWidget *flag_checkboxes[5];$/;"	m	struct:_CalendarData	file:	access:public
+_CalendarData::font	canlendar.c	/^  gchar     *font;$/;"	m	struct:_CalendarData	file:	access:public
+_CalendarData::font_dialog	canlendar.c	/^  GtkWidget *font_dialog;$/;"	m	struct:_CalendarData	file:	access:public
+_CalendarData::last_sig	canlendar.c	/^  GtkWidget *last_sig;$/;"	m	struct:_CalendarData	file:	access:public
+_CalendarData::month	canlendar.c	/^  GtkWidget *month;$/;"	m	struct:_CalendarData	file:	access:public
+_CalendarData::prev2_sig	canlendar.c	/^  GtkWidget *prev2_sig;$/;"	m	struct:_CalendarData	file:	access:public
+_CalendarData::prev_sig	canlendar.c	/^  GtkWidget *prev_sig;$/;"	m	struct:_CalendarData	file:	access:public
+_CalendarData::settings	canlendar.c	/^  gboolean  settings[5];$/;"	m	struct:_CalendarData	file:	access:public
+_CalendarData::window	canlendar.c	/^  GtkWidget *window;$/;"	m	struct:_CalendarData	file:	access:public
+_ProgressData	progressbar.c	/^typedef struct _ProgressData$/;"	s	file:
+_ProgressData::activity_mode	progressbar.c	/^    gboolean activity_mode;$/;"	m	struct:_ProgressData	file:	access:public
+_ProgressData::pbar	progressbar.c	/^    GtkWidget *pbar;$/;"	m	struct:_ProgressData	file:	access:public
+_ProgressData::timer	progressbar.c	/^    int timer;$/;"	m	struct:_ProgressData	file:	access:public
+_ProgressData::window	progressbar.c	/^    GtkWidget *window;$/;"	m	struct:_ProgressData	file:	access:public
+activity_mode	progressbar.c	/^    gboolean activity_mode;$/;"	m	struct:_ProgressData	file:	access:public
+add_item_clicked	combox.c	/^add_item_clicked(GtkWidget *sender, gpointer data)$/;"	f	file:	signature:(GtkWidget *sender, gpointer data)
+area_event	color.c	/^gint area_event(GtkWidget *widget, GdkEvent *event, gpointer client_data)$/;"	f	signature:(GtkWidget *widget, GdkEvent *event, gpointer client_data)
+auth_capslock_label	capslock.c	/^	GtkWidget *auth_capslock_label;$/;"	m	struct:login_widget	file:	access:public
+both_button	toolbars.c	/^         * both_button; \/* 切换工具栏风格的单选按钮 *\/$/;"	v
+button_exit	capslock.c	/^	GtkWidget *button_exit;$/;"	m	struct:login_widget	file:	access:public
+button_exit	login.c	/^	GtkWidget *button_exit;$/;"	m	struct:login_widget	file:	access:public
+button_login	capslock.c	/^	GtkWidget *button_login; \/\/两个按钮，一个点击后登录，一个点击后退出$/;"	m	struct:login_widget	file:	access:public
+button_login	login.c	/^	GtkWidget *button_login; \/\/两个按钮，一个点击后登录，一个点击后退出$/;"	m	struct:login_widget	file:	access:public
+button_press	menubar.c	/^static gint button_press (GtkWidget *, GdkEvent *);$/;"	p	file:	signature:(GtkWidget *, GdkEvent *)
+button_press	menubar.c	/^static gint button_press( GtkWidget *widget,$/;"	f	file:	signature:( GtkWidget *widget, GdkEvent *event )
+calendar_date_to_string	canlendar.c	/^void calendar_date_to_string( CalendarData *data,$/;"	f	signature:( CalendarData *data, char *buffer, gint buff_len )
+calendar_day_selected	canlendar.c	/^void calendar_day_selected( GtkWidget    *widget,$/;"	f	signature:( GtkWidget *widget, CalendarData *data )
+calendar_day_selected_double_click	canlendar.c	/^void calendar_day_selected_double_click( GtkWidget    *widget,$/;"	f	signature:( GtkWidget *widget, CalendarData *data )
+calendar_font_selection_ok	canlendar.c	/^void calendar_font_selection_ok( GtkWidget    *button,$/;"	f	signature:( GtkWidget *button, CalendarData *calendar )
+calendar_monday_first	canlendar.c	/^  calendar_monday_first$/;"	e	enum:__anon2	file:
+calendar_month_change	canlendar.c	/^  calendar_month_change, $/;"	e	enum:__anon2	file:
+calendar_month_changed	canlendar.c	/^void calendar_month_changed( GtkWidget    *widget,$/;"	f	signature:( GtkWidget *widget, CalendarData *data )
+calendar_next_month	canlendar.c	/^void calendar_next_month( GtkWidget    *widget,$/;"	f	signature:( GtkWidget *widget, CalendarData *data )
+calendar_next_year	canlendar.c	/^void calendar_next_year( GtkWidget    *widget,$/;"	f	signature:( GtkWidget *widget, CalendarData *data )
+calendar_prev_month	canlendar.c	/^void calendar_prev_month( GtkWidget    *widget,$/;"	f	signature:( GtkWidget *widget, CalendarData *data )
+calendar_prev_year	canlendar.c	/^void calendar_prev_year( GtkWidget    *widget,$/;"	f	signature:( GtkWidget *widget, CalendarData *data )
+calendar_select_font	canlendar.c	/^void calendar_select_font( GtkWidget    *button,$/;"	f	signature:( GtkWidget *button, CalendarData *calendar )
+calendar_set_flags	canlendar.c	/^void calendar_set_flags( CalendarData *calendar )$/;"	f	signature:( CalendarData *calendar )
+calendar_set_signal_strings	canlendar.c	/^void calendar_set_signal_strings( char         *sig_str,$/;"	f	signature:( char *sig_str, CalendarData *data)
+calendar_show_days	canlendar.c	/^  calendar_show_days,$/;"	e	enum:__anon2	file:
+calendar_show_header	canlendar.c	/^  calendar_show_header,$/;"	e	enum:__anon2	file:
+calendar_show_week	canlendar.c	/^  calendar_show_week,$/;"	e	enum:__anon2	file:
+calendar_toggle_flag	canlendar.c	/^void calendar_toggle_flag( GtkWidget    *toggle,$/;"	f	signature:( GtkWidget *toggle, CalendarData *calendar )
+callback	button.c	/^void callback(GtkWidget *widget, gpointer data)$/;"	f	signature:(GtkWidget *widget, gpointer data)
+callback	helloword2.c	/^void callback(GtkWidget *widget, gpointer data)$/;"	f	signature:(GtkWidget *widget, gpointer data)
+callback	table.c	/^void callback(GtkWidget *widget, gpointer data)$/;"	f	signature:(GtkWidget *widget, gpointer data)
+cb_digits_scale	range.c	/^void cb_digits_scale(GtkAdjustment *adj)$/;"	f	signature:(GtkAdjustment *adj)
+cb_draw_value	range.c	/^void cb_draw_value(GtkToggleButton *button)$/;"	f	signature:(GtkToggleButton *button)
+cb_page_size	range.c	/^void cb_page_size(GtkAdjustment *get, GtkAdjustment *set)$/;"	f	signature:(GtkAdjustment *get, GtkAdjustment *set)
+cb_pos_menu_select	range.c	/^void cb_pos_menu_select(GtkWidget *item, GtkPositionType pos)$/;"	f	signature:(GtkWidget *item, GtkPositionType pos)
+cb_update_menu_select	range.c	/^void cb_update_menu_select(GtkWidget *item, GtkUpdateType  policy)$/;"	f	signature:(GtkWidget *item, GtkUpdateType policy)
+change_digits	spinbutton.c	/^void change_digits(GtkWidget *widget, GtkSpinButton *spin)$/;"	f	signature:(GtkWidget *widget, GtkSpinButton *spin)
+close_application	radio.c	/^gint close_application(GtkWidget * widget, GdkEvent *event, gpointer data)$/;"	f	signature:(GtkWidget * widget, GdkEvent *event, gpointer data)
+close_application	ruler.c	/^gint close_application(GtkWidget *widget, GdkEvent *event, gpointer data)$/;"	f	signature:(GtkWidget *widget, GdkEvent *event, gpointer data)
+close_button	toolbars.c	/^GtkWidget* close_button; \/* 这个按钮将引发一个信号以$/;"	v
+color	color.c	/^GdkColor color;$/;"	v
+color_changed_cb	color.c	/^void color_changed_cb(GtkWidget *widget, GtkColorSelection *colorsel)$/;"	f	signature:(GtkWidget *widget, GtkColorSelection *colorsel)
+colorseldlg	color.c	/^GtkWidget *colorseldlg = NULL;$/;"	v
+create_arrow_button	arrows.c	/^GtkWidget * create_arrow_button(GtkArrowType arrow_type, GtkShadowType shadow_type)$/;"	f	signature:(GtkArrowType arrow_type, GtkShadowType shadow_type)
+create_bbox	buttonbox.c	/^GtkWidget *create_bbox(gint horizontal, char *title, gint spacing, gint child_w, gint child_h, gint layout)$/;"	f	signature:(gint horizontal, char *title, gint spacing, gint child_w, gint child_h, gint layout)
+create_calendar	canlendar.c	/^void create_calendar()$/;"	f
+create_combobox_with_model	combox.c	/^static GtkWidget *create_combobox_with_model()$/;"	f	file:
+create_list	panedwindow.c	/^GtkWidget * create_list(void)$/;"	f	signature:(void)
+create_range_controls	range.c	/^void create_range_controls( void )$/;"	f	signature:( void )
+create_text	panedwindow.c	/^GtkWidget * create_text(void)$/;"	f	signature:(void)
+deal_switch_page	notebook.c	/^void deal_switch_page(GtkNotebook *notebook, gpointer page, guint page_num, gpointer data)$/;"	f	signature:(GtkNotebook *notebook, gpointer page, guint page_num, gpointer data)
+delete_event	box.c	/^gint delete_event(GtkWidget *widget, GdkEvent *event, gpointer data)$/;"	f	signature:(GtkWidget *widget, GdkEvent *event, gpointer data)
+delete_event	helloword.c	/^gint delete_event(GtkWidget *widget, GdkEvent *event, gpointer data)$/;"	f	signature:(GtkWidget *widget, GdkEvent *event, gpointer data)
+delete_event	helloword2.c	/^gint delete_event(GtkWidget *widget, GdkEvent *event, gpointer data)$/;"	f	signature:(GtkWidget *widget, GdkEvent *event, gpointer data)
+delete_event	table.c	/^gint delete_event(GtkWidget *widget, GdkEvent *event, gpointer data)$/;"	f	signature:(GtkWidget *widget, GdkEvent *event, gpointer data)
+delete_event	toolbars.c	/^gint delete_event (GtkWidget *widget, GdkEvent *event, gpointer data)$/;"	f	signature:(GtkWidget *widget, GdkEvent *event, gpointer data)
+destroy	helloword.c	/^void destroy(GtkWidget *widget, gpointer data)$/;"	f	signature:(GtkWidget *widget, gpointer data)
+destroy	scrollwindow2.c	/^void destroy( GtkWidget *widget,$/;"	f	signature:( GtkWidget *widget, gpointer data )
+destroy_progress	progressbar.c	/^void destroy_progress(GtkWidget *widget, ProgressData *pdata)$/;"	f	signature:(GtkWidget *widget, ProgressData *pdata)
+destroy_window	color.c	/^gint destroy_window(GtkWidget *widget, GdkEvent *event, gpointer client_data)$/;"	f	signature:(GtkWidget *widget, GdkEvent *event, gpointer client_data)
+drawingarea	color.c	/^GtkWidget *drawingarea = NULL;$/;"	v
+entry	toolbars.c	/^GtkWidget* entry; \/* 一个文本输入构件，用于演示任何构件都可以组装到$/;"	v
+entry_button_press	capslock.c	/^entry_button_press (GtkWidget      *widget,                                                                                      $/;"	f	file:	signature:(GtkWidget *widget, GdkEventButton *event)
+entry_button_press	capslock.c	/^static gint entry_button_press (GtkWidget *widget, GdkEventButton *event);$/;"	p	file:	signature:(GtkWidget *widget, GdkEventButton *event)
+entry_button_press	login.c	/^entry_button_press (GtkWidget      *widget,                                                                                      $/;"	f	file:	signature:(GtkWidget *widget, GdkEventButton *event)
+entry_callback	textentry.c	/^void entry_callback(GtkWidget *widget, GtkWidget *entry)$/;"	f	signature:(GtkWidget *widget, GtkWidget *entry)
+entry_pwd	capslock.c	/^	GtkWidget *entry_pwd;$/;"	m	struct:login_widget	file:	access:public
+entry_pwd	login.c	/^	GtkWidget *entry_pwd;$/;"	m	struct:login_widget	file:	access:public
+entry_toggle_editable	textentry.c	/^void entry_toggle_editable(GtkWidget *checkbutton, GtkWidget *entry)$/;"	f	signature:(GtkWidget *checkbutton, GtkWidget *entry)
+entry_toggle_visibility	textentry.c	/^void entry_toggle_visibility(GtkWidget *checkbutton, GtkWidget *entry)$/;"	f	signature:(GtkWidget *checkbutton, GtkWidget *entry)
+entry_username	capslock.c	/^	GtkWidget *entry_username; \/\/两个文本框，用于输入用户名和密码$/;"	m	struct:login_widget	file:	access:public
+entry_username	login.c	/^	GtkWidget *entry_username; \/\/两个文本框，用于输入用户名和密码$/;"	m	struct:login_widget	file:	access:public
+file_ok_sel	filesel.c	/^void file_ok_sel(GtkWidget *w, GtkFileSelection *fs)$/;"	f	signature:(GtkWidget *w, GtkFileSelection *fs)
+flag_checkboxes	canlendar.c	/^  GtkWidget *flag_checkboxes[5];$/;"	m	struct:_CalendarData	file:	access:public
+font	canlendar.c	/^  gchar     *font;$/;"	m	struct:_CalendarData	file:	access:public
+font_dialog	canlendar.c	/^  GtkWidget *font_dialog;$/;"	m	struct:_CalendarData	file:	access:public
+get_kbd_lock_mode	capslock.c	/^get_kbd_lock_mode (void)$/;"	f	file:	signature:(void)
+get_kbd_lock_mode	capslock.c	/^static int get_kbd_lock_mode (void);$/;"	p	file:	signature:(void)
+get_main_menu	menubar2.c	/^void get_main_menu( GtkWidget  *window,$/;"	f	signature:( GtkWidget *window, GtkWidget **menubar )
+get_value	spinbutton.c	/^void get_value(GtkWidget *widget, gpointer data)$/;"	f	signature:(GtkWidget *widget, gpointer data)
+gtk_win_destroy	capslock.c	/^void gtk_win_destroy(GtkWidget *widget,gpointer data)$/;"	f	signature:(GtkWidget *widget,gpointer data)
+gtk_win_destroy	capslock.c	/^void gtk_win_destroy(GtkWidget *widget,gpointer data);$/;"	p	file:	signature:(GtkWidget *widget,gpointer data)
+gtk_win_destroy	login.c	/^void gtk_win_destroy(GtkWidget *widget,gpointer data)$/;"	f	signature:(GtkWidget *widget,gpointer data)
+gtk_xpm	toolbars.c	/^static char * gtk_xpm[] = {$/;"	v	file:
+hbox_button	capslock.c	/^	GtkWidget *hbox_button;$/;"	m	struct:login_widget	file:	access:public
+hbox_button	login.c	/^	GtkWidget *hbox_button;$/;"	m	struct:login_widget	file:	access:public
+hbox_pwd	capslock.c	/^	GtkWidget *hbox_pwd;$/;"	m	struct:login_widget	file:	access:public
+hbox_pwd	login.c	/^	GtkWidget *hbox_pwd;$/;"	m	struct:login_widget	file:	access:public
+hbox_username	capslock.c	/^	GtkWidget *hbox_username; \/\/包含用户名提示标签和用户名文本框，下面的HBOX作用类似$/;"	m	struct:login_widget	file:	access:public
+hbox_username	login.c	/^	GtkWidget *hbox_username; \/\/包含用户名提示标签和用户名文本框，下面的HBOX作用类似$/;"	m	struct:login_widget	file:	access:public
+hello	helloword.c	/^void hello(GtkWidget *widget, gpointer data)$/;"	f	signature:(GtkWidget *widget, gpointer data)
+hscale	range.c	/^GtkWidget *hscale, *vscale;$/;"	v
+icon_button	toolbars.c	/^         * icon_button,$/;"	v
+init_login_widget	capslock.c	/^void init_login_widget()$/;"	f
+init_login_widget	capslock.c	/^void init_login_widget();$/;"	p	file:
+init_login_widget	login.c	/^void init_login_widget()$/;"	f
+insert_text	panedwindow.c	/^void insert_text(GtkTextBuffer *buffer)$/;"	f	signature:(GtkTextBuffer *buffer)
+kbd_lock_mode	capslock.c	/^	int kbd_lock_mode;$/;"	m	struct:login_widget	file:	access:public
+kbd_lock_mode_update	capslock.c	/^kbd_lock_mode_update (kwgt wgt,$/;"	f	file:	signature:(kwgt wgt, int mode)
+kbd_lock_mode_update	capslock.c	/^static void kbd_lock_mode_update (kwgt wgt, int mode);$/;"	p	file:	signature:(kwgt wgt, int mode)
+key_value	event.c	/^gboolean key_value(GtkWidget *widget, GdkEventKey *event, gpointer data)$/;"	f	signature:(GtkWidget *widget, GdkEventKey *event, gpointer data)
+keymap	capslock.c	/^	GdkKeymap *keymap;$/;"	m	struct:login_widget	file:	access:public
+kwgt	capslock.c	/^}kwgt;$/;"	t	typeref:struct:login_widget	file:
+label_pwd	capslock.c	/^	GtkWidget *label_pwd;$/;"	m	struct:login_widget	file:	access:public
+label_pwd	login.c	/^	GtkWidget *label_pwd;$/;"	m	struct:login_widget	file:	access:public
+label_tips	capslock.c	/^	GtkWidget *label_tips; \/\/用于信息提示的标签$/;"	m	struct:login_widget	file:	access:public
+label_tips	login.c	/^	GtkWidget *label_tips; \/\/用于信息提示的标签$/;"	m	struct:login_widget	file:	access:public
+label_username	capslock.c	/^	GtkWidget *label_username; \/\/两个标签用于显示username文本框和password文本框提示$/;"	m	struct:login_widget	file:	access:public
+label_username	login.c	/^	GtkWidget *label_username; \/\/两个标签用于显示username文本框和password文本框提示$/;"	m	struct:login_widget	file:	access:public
+last_sig	canlendar.c	/^  GtkWidget *last_sig;$/;"	m	struct:_CalendarData	file:	access:public
+login	capslock.c	/^void login(GtkWidget *widget,gpointer data)$/;"	f	signature:(GtkWidget *widget,gpointer data)
+login	capslock.c	/^void login(GtkWidget *widget,gpointer data);$/;"	p	file:	signature:(GtkWidget *widget,gpointer data)
+login	login.c	/^void login(GtkWidget *widget,gpointer data)$/;"	f	signature:(GtkWidget *widget,gpointer data)
+login_widget	capslock.c	/^typedef struct login_widget{$/;"	s	file:
+login_widget	login.c	/^struct login_widget{$/;"	s	file:
+login_widget::auth_capslock_label	capslock.c	/^	GtkWidget *auth_capslock_label;$/;"	m	struct:login_widget	file:	access:public
+login_widget::button_exit	capslock.c	/^	GtkWidget *button_exit;$/;"	m	struct:login_widget	file:	access:public
+login_widget::button_exit	login.c	/^	GtkWidget *button_exit;$/;"	m	struct:login_widget	file:	access:public
+login_widget::button_login	capslock.c	/^	GtkWidget *button_login; \/\/两个按钮，一个点击后登录，一个点击后退出$/;"	m	struct:login_widget	file:	access:public
+login_widget::button_login	login.c	/^	GtkWidget *button_login; \/\/两个按钮，一个点击后登录，一个点击后退出$/;"	m	struct:login_widget	file:	access:public
+login_widget::entry_pwd	capslock.c	/^	GtkWidget *entry_pwd;$/;"	m	struct:login_widget	file:	access:public
+login_widget::entry_pwd	login.c	/^	GtkWidget *entry_pwd;$/;"	m	struct:login_widget	file:	access:public
+login_widget::entry_username	capslock.c	/^	GtkWidget *entry_username; \/\/两个文本框，用于输入用户名和密码$/;"	m	struct:login_widget	file:	access:public
+login_widget::entry_username	login.c	/^	GtkWidget *entry_username; \/\/两个文本框，用于输入用户名和密码$/;"	m	struct:login_widget	file:	access:public
+login_widget::hbox_button	capslock.c	/^	GtkWidget *hbox_button;$/;"	m	struct:login_widget	file:	access:public
+login_widget::hbox_button	login.c	/^	GtkWidget *hbox_button;$/;"	m	struct:login_widget	file:	access:public
+login_widget::hbox_pwd	capslock.c	/^	GtkWidget *hbox_pwd;$/;"	m	struct:login_widget	file:	access:public
+login_widget::hbox_pwd	login.c	/^	GtkWidget *hbox_pwd;$/;"	m	struct:login_widget	file:	access:public
+login_widget::hbox_username	capslock.c	/^	GtkWidget *hbox_username; \/\/包含用户名提示标签和用户名文本框，下面的HBOX作用类似$/;"	m	struct:login_widget	file:	access:public
+login_widget::hbox_username	login.c	/^	GtkWidget *hbox_username; \/\/包含用户名提示标签和用户名文本框，下面的HBOX作用类似$/;"	m	struct:login_widget	file:	access:public
+login_widget::kbd_lock_mode	capslock.c	/^	int kbd_lock_mode;$/;"	m	struct:login_widget	file:	access:public
+login_widget::keymap	capslock.c	/^	GdkKeymap *keymap;$/;"	m	struct:login_widget	file:	access:public
+login_widget::label_pwd	capslock.c	/^	GtkWidget *label_pwd;$/;"	m	struct:login_widget	file:	access:public
+login_widget::label_pwd	login.c	/^	GtkWidget *label_pwd;$/;"	m	struct:login_widget	file:	access:public
+login_widget::label_tips	capslock.c	/^	GtkWidget *label_tips; \/\/用于信息提示的标签$/;"	m	struct:login_widget	file:	access:public
+login_widget::label_tips	login.c	/^	GtkWidget *label_tips; \/\/用于信息提示的标签$/;"	m	struct:login_widget	file:	access:public
+login_widget::label_username	capslock.c	/^	GtkWidget *label_username; \/\/两个标签用于显示username文本框和password文本框提示$/;"	m	struct:login_widget	file:	access:public
+login_widget::label_username	login.c	/^	GtkWidget *label_username; \/\/两个标签用于显示username文本框和password文本框提示$/;"	m	struct:login_widget	file:	access:public
+login_widget::vbox	capslock.c	/^	GtkWidget *vbox; \/\/垂直布局盒子，包含以下三个水平布局盒子$/;"	m	struct:login_widget	file:	access:public
+login_widget::vbox	login.c	/^	GtkWidget *vbox; \/\/垂直布局盒子，包含以下三个水平布局盒子$/;"	m	struct:login_widget	file:	access:public
+login_widget::window	capslock.c	/^	GtkWidget *window; \/\/主窗体$/;"	m	struct:login_widget	file:	access:public
+login_widget::window	login.c	/^	GtkWidget *window; \/\/主窗体$/;"	m	struct:login_widget	file:	access:public
+main	arrows.c	/^int main(int argc, char **argv)$/;"	f	signature:(int argc, char **argv)
+main	aspectframe.c	/^int main(int argc, char **argv)$/;"	f	signature:(int argc, char **argv)
+main	box.c	/^int main(int argc, char** argv)$/;"	f	signature:(int argc, char** argv)
+main	button.c	/^int main(int argc, char *argv[])$/;"	f	signature:(int argc, char *argv[])
+main	buttonbox.c	/^int main(int argc, char **argv)$/;"	f	signature:(int argc, char **argv)
+main	canlendar.c	/^int main(int   argc,$/;"	f	signature:(int argc, char *argv[] )
+main	capslock.c	/^int main(int argc,char *argv[])$/;"	f	signature:(int argc,char *argv[])
+main	color.c	/^gint main(gint argc, gchar ** argv)$/;"	f	signature:(gint argc, gchar ** argv)
+main	combo.c	/^int main(int argc, char **argv)$/;"	f	signature:(int argc, char **argv)
+main	combox.c	/^int main(int argc, char *argv[])$/;"	f	signature:(int argc, char *argv[])
+main	dialog.c	/^int main( int argc, char *argv[])$/;"	f	signature:( int argc, char *argv[])
+main	event.c	/^int main(int argc, char *argv[])$/;"	f	signature:(int argc, char *argv[])
+main	eventbox.c	/^int main(int argc, char **argv)$/;"	f	signature:(int argc, char **argv)
+main	filesel.c	/^int main(int argc, char **argv)$/;"	f	signature:(int argc, char **argv)
+main	fixedcontainer.c	/^int main(int argc, char **argv)$/;"	f	signature:(int argc, char **argv)
+main	frame.c	/^int main(int argc, char **argv)$/;"	f	signature:(int argc, char **argv)
+main	helloword.c	/^int main(int argc, char *argv[])$/;"	f	signature:(int argc, char *argv[])
+main	helloword2.c	/^int main(int argc, char **argv)$/;"	f	signature:(int argc, char **argv)
+main	label.c	/^int main( int   argc,$/;"	f	signature:( int argc, char *argv[] )
+main	log.c	/^int main(int argc, char **argv) $/;"	f	signature:(int argc, char **argv)
+main	login.c	/^int main(int argc,char *argv[])$/;"	f	signature:(int argc,char *argv[])
+main	menubar.c	/^int main( int   argc,$/;"	f	signature:( int argc, char *argv[] )
+main	menubar2.c	/^int main( int argc,$/;"	f	signature:( int argc, char *argv[] )
+main	notebook.c	/^int main(int argc, char *argv[])$/;"	f	signature:(int argc, char *argv[])
+main	paned.c	/^int main(int argc, char **argv)$/;"	f	signature:(int argc, char **argv)
+main	panedwindow.c	/^int main(int argc, char **argv)$/;"	f	signature:(int argc, char **argv)
+main	progressbar.c	/^int main(int argc, char ** argv)$/;"	f	signature:(int argc, char ** argv)
+main	radio.c	/^int main(int argc, char * argv[])$/;"	f	signature:(int argc, char * argv[])
+main	range.c	/^int main( int   argc,$/;"	f	signature:( int argc, char *argv[] )
+main	ruler.c	/^int main(int argc, char **argv)$/;"	f	signature:(int argc, char **argv)
+main	scrollwindow.c	/^int main(int argc, char ** argv)$/;"	f	signature:(int argc, char ** argv)
+main	scrollwindow2.c	/^int main( int   argc,$/;"	f	signature:( int argc, char *argv[] )
+main	selectionarea.c	/^int main( int   argc,$/;"	f	signature:( int argc, char *argv[] )
+main	spinbutton.c	/^int main(int argc, char **argv)$/;"	f	signature:(int argc, char **argv)
+main	statusbar.c	/^int main(int argc, char **argv)$/;"	f	signature:(int argc, char **argv)
+main	table.c	/^int main(int argc, char *argv[])$/;"	f	signature:(int argc, char *argv[])
+main	textentry.c	/^int main(int argc, char **argv)$/;"	f	signature:(int argc, char **argv)
+main	toolbars.c	/^int main (int argc, char *argv[])$/;"	f	signature:(int argc, char *argv[])
+make_box	box.c	/^GtkWidget *make_box(gboolean homogeneous, gint spacing, $/;"	f	signature:(gboolean homogeneous, gint spacing, gboolean expand, gboolean fill, guint padding)
+make_menu_item	range.c	/^GtkWidget *make_menu_item (gchar *name, GCallback callback, gpointer data)$/;"	f	signature:(gchar *name, GCallback callback, gpointer data)
+menu_items	menubar2.c	/^static GtkItemFactoryEntry menu_items[] = {$/;"	v	file:
+menuitem_response	menubar.c	/^static void menuitem_response (gchar *);$/;"	p	file:	signature:(gchar *)
+menuitem_response	menubar.c	/^static void menuitem_response( gchar *string )$/;"	f	file:	signature:( gchar *string )
+month	canlendar.c	/^  GtkWidget *month;$/;"	m	struct:_CalendarData	file:	access:public
+move_button	fixedcontainer.c	/^void move_button(GtkWidget *widget, GtkWidget * fixed)$/;"	f	signature:(GtkWidget *widget, GtkWidget * fixed)
+my_callback_function	combo.c	/^void my_callback_function(GtkWidget *widget, GtkWidget *entry )$/;"	f	signature:(GtkWidget *widget, GtkWidget *entry )
+pbar	progressbar.c	/^    GtkWidget *pbar;$/;"	m	struct:_ProgressData	file:	access:public
+pop_item	statusbar.c	/^void pop_item(GtkWidget *widget, gpointer data)$/;"	f	signature:(GtkWidget *widget, gpointer data)
+prev2_sig	canlendar.c	/^  GtkWidget *prev2_sig;$/;"	m	struct:_CalendarData	file:	access:public
+prev_sig	canlendar.c	/^  GtkWidget *prev_sig;$/;"	m	struct:_CalendarData	file:	access:public
+print_hello	menubar2.c	/^static void print_hello( GtkWidget *w,$/;"	f	file:	signature:( GtkWidget *w, gpointer data )
+progress_timeout	progressbar.c	/^gint progress_timeout(gpointer data)$/;"	f	signature:(gpointer data)
+push_item	statusbar.c	/^void push_item(GtkWidget *widget, gpointer data)$/;"	f	signature:(GtkWidget *widget, gpointer data)
+radio_event	toolbars.c	/^void radio_event (GtkWidget *widget, gpointer data)$/;"	f	signature:(GtkWidget *widget, gpointer data)
+run_keymap_handler	capslock.c	/^run_keymap_handler (GdkKeymap *keymap, kwgt *wgt)$/;"	f	file:	signature:(GdkKeymap *keymap, kwgt *wgt)
+run_keymap_handler	capslock.c	/^static void run_keymap_handler (kwgt wgt, kwgt *wgt);$/;"	p	file:	signature:(kwgt wgt, kwgt *wgt)
+scale_set_default_values	range.c	/^void scale_set_default_values( GtkScale *scale )$/;"	f	signature:( GtkScale *scale )
+select_item_clicked	combox.c	/^select_item_clicked(GtkWidget *sender, gpointer data)$/;"	f	file:	signature:(GtkWidget *sender, gpointer data)
+selection_button	selectionarea.c	/^GtkWidget *selection_button;$/;"	v
+selection_clear	selectionarea.c	/^gint selection_clear( GtkWidget         *widget,$/;"	f	signature:( GtkWidget *widget, GdkEventSelection *event, gint *have_selection )
+selection_handle	selectionarea.c	/^void selection_handle( GtkWidget        *widget, $/;"	f	signature:( GtkWidget *widget, GtkSelectionData *selection_data, guint info, guint time_stamp, gpointer data )
+selection_toggled	selectionarea.c	/^void selection_toggled( GtkWidget *widget,$/;"	f	signature:( GtkWidget *widget, gint *have_selection )
+selection_widget	selectionarea.c	/^GtkWidget *selection_widget;$/;"	v
+settings	canlendar.c	/^  gboolean  settings[5];$/;"	m	struct:_CalendarData	file:	access:public
+show_error	dialog.c	/^void show_error(GtkWidget *widget, gpointer window)$/;"	f	signature:(GtkWidget *widget, gpointer window)
+show_info	dialog.c	/^void show_info(GtkWidget *widget, gpointer window)$/;"	f	signature:(GtkWidget *widget, gpointer window)
+show_question	dialog.c	/^void show_question(GtkWidget *widget, gpointer window)$/;"	f	signature:(GtkWidget *widget, gpointer window)
+show_warning	dialog.c	/^void show_warning(GtkWidget *widget, gpointer window)$/;"	f	signature:(GtkWidget *widget, gpointer window)
+spinner1	spinbutton.c	/^static GtkWidget *spinner1;$/;"	v	file:
+status_bar	statusbar.c	/^GtkWidget *status_bar;$/;"	v
+text_button	toolbars.c	/^GtkWidget* text_button,$/;"	v
+timer	progressbar.c	/^    int timer;$/;"	m	struct:_ProgressData	file:	access:public
+toggle_activity_mode	progressbar.c	/^void toggle_activity_mode(GtkWidget *widget, ProgressData *pdata)$/;"	f	signature:(GtkWidget *widget, ProgressData *pdata)
+toggle_event	toolbars.c	/^void toggle_event (GtkWidget *widget, gpointer data)$/;"	f	signature:(GtkWidget *widget, gpointer data)
+toggle_numeric	spinbutton.c	/^void toggle_numeric(GtkWidget *widget, GtkSpinButton *spin)$/;"	f	signature:(GtkWidget *widget, GtkSpinButton *spin)
+toggle_orientation	progressbar.c	/^void toggle_orientation(GtkWidget *widget, ProgressData *pdata)$/;"	f	signature:(GtkWidget *widget, ProgressData *pdata)
+toggle_show_text	progressbar.c	/^void toggle_show_text(GtkWidget *widget, ProgressData *pdata)$/;"	f	signature:(GtkWidget *widget, ProgressData *pdata)
+toggle_snap	spinbutton.c	/^void toggle_snap(GtkWidget *widget, GtkSpinButton *spin)$/;"	f	signature:(GtkWidget *widget, GtkSpinButton *spin)
+tooltips_button	toolbars.c	/^GtkWidget* tooltips_button; \/* 启用\/禁用工具提示 *\/$/;"	v
+vbox	capslock.c	/^	GtkWidget *vbox; \/\/垂直布局盒子，包含以下三个水平布局盒子$/;"	m	struct:login_widget	file:	access:public
+vbox	login.c	/^	GtkWidget *vbox; \/\/垂直布局盒子，包含以下三个水平布局盒子$/;"	m	struct:login_widget	file:	access:public
+vscale	range.c	/^GtkWidget *hscale, *vscale;$/;"	v
+wgt	capslock.c	/^kwgt wgt;$/;"	v
+wgt	login.c	/^}wgt;$/;"	v	typeref:struct:login_widget
+window	canlendar.c	/^  GtkWidget *window;$/;"	m	struct:_CalendarData	file:	access:public
+window	capslock.c	/^	GtkWidget *window; \/\/主窗体$/;"	m	struct:login_widget	file:	access:public
+window	login.c	/^	GtkWidget *window; \/\/主窗体$/;"	m	struct:login_widget	file:	access:public
+window	progressbar.c	/^    GtkWidget *window;$/;"	m	struct:_ProgressData	file:	access:public
+x	fixedcontainer.c	/^gint x = 50;$/;"	v
+xpm_label_box	button.c	/^GtkWidget *xpm_label_box(gchar *xpm_filename, gchar *label_text)$/;"	f	signature:(gchar *xpm_filename, gchar *label_text)
+y	fixedcontainer.c	/^gint y = 50;$/;"	v

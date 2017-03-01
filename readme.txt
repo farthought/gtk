@@ -1,0 +1,39 @@
+arrow.c :箭头
+aspectfram.c:长宽比例不变的fram
+buttonbox.c:横向纵向盒子区别
+box.c:盒子的结构
+button.c
+calendar.c:日历
+capslock.c:监测大小写按键
+color.c：颜色选择构件
+combo.c:组合框
+combox.c 组装盒
+dialog.c:对话框的介绍
+eventbox.c:事件盒构件
+event.c:事件
+filesel.c：文件选择构件
+fixedcontainer.c:固定容器构件
+frame.c：框架构件
+helloword2.c：最简单的程序
+helloword.c:最简单的程序
+label.c:标签的布局
+log.c:syslog日志打印
+login.c:模拟登陆
+Makefile：makefile文件
+make.sh：make脚本，编译方法：./make.sh 源代码，清除方法：./make.sh
+menubar.c:菜单栏
+menubar2.c:菜单栏
+notebook.c:笔记本控件
+paned.c:分栏构件
+panedwindow.c:分栏构建应用
+progressbar.c：进度条
+radio.c:单选按钮
+rang.c:范围构件，滚动条，比例构件
+ruler.c:标尺
+scrollwindow.c:滚动窗口
+scrollwindow2.c:滚动窗口实例
+spinbutton:微调按钮
+statusbar.c:状态栏
+table.c:桌面表格
+textentry.c:文本输入窗口
+toolbars.c:工具栏
