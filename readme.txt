@@ -14,6 +14,7 @@ event.c:事件
 filesel.c：文件选择构件
 fixedcontainer.c:固定容器构件
 frame.c：框架构件
+glade:gtk结合glade设计开发实例
 helloword2.c：最简单的程序
 helloword.c:最简单的程序
 label.c:标签的布局

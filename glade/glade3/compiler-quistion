@@ -1,0 +1,61 @@
+LZ在写作业时，自己切身遇到的问题以及最终经过研究得出的解决方案。
+
+所做实验的代码test.c如下：
+
+#include <gtk/gtk.h>
+
+void on_mainLoginWindow_destroy(){
+
+}
+
+
+int main(int argc, char *argv[]) {
+    GtkBuilder *builder;
+    GtkWidget *window;
+
+    gtk_init(&argc, &argv);
+
+    builder = gtk_builder_new();
+    gtk_builder_add_from_file(builder,"/home/lmm/文档/login.glade", NULL );
+    window = GTK_WIDGET(gtk_builder_get_object (builder, "mainLoginWindow"));
+    gtk_builder_connect_signals(builder, NULL );
+
+    g_object_unref(G_OBJECT (builder) );
+
+    gtk_widget_show_all(window);
+    gtk_main();
+
+    return 0;
+}
+
+问题一：gtk_widget_show_all: assertion `GTK_IS_WIDGET (widget)' failed
+
+这是一个比较常见的问题，一般是因为这句代码引起的：window = GTK_WIDGET (gtk_builder_get_object (builder, "window"))，原因是在利用glade3构造GUI时，用户所起的主窗口名字与默认的不一样。代码中的"window"是默认的，而用户可能起得名字是"mainWindow"。
+
+解决方案：将构建名称改为自己所起的名字，例如：window = GTK_WIDGET (gtk_builder_get_object (builder, "mainWindow"))
+
+
+问题二: 命令行下编译出现Gtk-CRITICAL **: IA__gtk_widget_show_all: assertion `GTK_IS_WIDGET (widget)' failed
+
+这个问题一般很少见，被LZ遇到实属奇葩。注意，此问题报错比问题一多了" IA__"。经过研究，最后发现是路径问题引起的。LZ一开始将login.galde文件与test.c文件放在同级目录"/home/lmm/"文档下，以为代码中直接写相对路径就可以了，例如写成gtk_builder_add_from_file(builder,"login.glade", NULL )。最后研究后发现，必须写绝对路径才行。
+
+解决方案：代码gtk_builder_add_from_file(builder,"/home/lmm/文档/login.glade", NULL )中glade文件位置改为绝对路径
+
+问题三：Eclipse下编译出现Gtk-CRITICAL **: IA__gtk_widget_show_all: assertion `GTK_IS_WIDGET (widget)' failed
+
+LZ的IDE用的是Eclipse，如果读者用的是其他的，那么请忽略这个问题。同样，这也是路径问题引起的。在window下利用Eclipse写过java代码的一般知道，如果程序中用到类似.text的数据文件，那么将它放在与.java文件相同的目录下就可以了。抱着同样的想法，LZ写此代码时，也默认将login.glade文件与test.c放在同级目录下，结果杯具就这样发生了。
+
+解决方案：不要将.glade文件放在与.c文件同级目录下，可以将.glade文件放在Workspace下你的Project下面，也就是说放在.c文件的上一级目录。
+
+
+问题四：GLib-GObject-ERROR **: cannot create instance of abstract (non-instantiatable) type `GtkBox'
+
+这是因为GTK+版本与glade3不兼容产生的，galde3所需要的库是GTK+3.0，而不是GTK+2.0，网上出现的编译命令一般为是gcc -o main main.c `pkg-config --cflags --libs gtk+-2.0 gmodule-export-2.0`。
+
+解决方案：将命令改为gcc -o main main.c `pkg-config --cflags --libs gtk+-3.0 gmodule-export-2.0`
+如果是python代码提示相似的问题，解决办法：
+在import模块是应导入Gtk3.0的模块
+import gi
+gi.require_version('Gtk', '3.0')
+from gi.repository import Gtk
+然后使用Gtk模块编程。
