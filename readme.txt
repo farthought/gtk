@@ -27,6 +27,7 @@ menubar2.c:菜单栏
 notebook.c:笔记本控件
 paned.c:分栏构件
 panedwindow.c:分栏构建应用
+plug:插座，插头使用，用于将一个程序插入到另一个程序中
 progressbar.c：进度条
 radio.c:单选按钮
 rang.c:范围构件，滚动条，比例构件
@@ -38,3 +39,4 @@ statusbar.c:状态栏
 table.c:桌面表格
 textentry.c:文本输入窗口
 toolbars.c:工具栏
+treeview:树形列表的使用
